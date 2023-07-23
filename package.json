@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "axios": "^1.4.0",
+        "laravel-vite-plugin": "^0.7.8",
+        "vite": "^4.4.6"
+    },
+    "dependencies": {
+        "@inertiajs/vue3": "^1.0.9",
+        "sass": "^1.64.1",
+        "url": "^0.11.1",
+        "vite-plugin-compression": "^0.5.1",
+        "vite-plugin-mkcert": "^1.16.0",
+        "ziggy": "^2.4.0"
+    }
+}
