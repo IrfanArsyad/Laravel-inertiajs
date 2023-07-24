@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+
+use \App\Modules\Auth\Controllers\AuthController;
+use \App\Modules\Home\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,16 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Auth/Views/login');
-//    return view('app');
+
+Route::prefix('/')->name('home')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('.index');
 });
+
+
+Route::prefix('auth')->name('auth')->group(function () {
+    Route::get('/login', [AuthController::class, 'login'])->name('.login');
+    Route::get('/register', [AuthController::class, 'register'])->name('.register');
+});
+
+
+

@@ -1,5 +1,5 @@
-import { createApp, defineAsyncComponent, h } from 'vue'
-import { createInertiaApp, Link } from '@inertiajs/vue3'
+import {createApp, defineAsyncComponent, h} from 'vue'
+import {createInertiaApp, Link} from '@inertiajs/vue3'
 
 /*
  * import ziggy library

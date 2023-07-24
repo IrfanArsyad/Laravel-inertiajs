@@ -1,5 +1,7 @@
 <script setup>
 import {defineAsyncComponent} from 'vue'
+
+
 // import CHeader from "./include/header.vue" // c-header
 const CHeader = defineAsyncComponent(() =>
     import('@/vue/layouts/include/header.vue'),
@@ -13,9 +15,8 @@ const CFooter = defineAsyncComponent(() =>
 
 <template>
     <c-header/>
-    <div class="">
-        <slot></slot>
-    </div>
+    <slot></slot>
+
 </template>
 
 <style scoped>
