@@ -15,8 +15,13 @@ const CFooter = defineAsyncComponent(() =>
 
 <template>
     <c-header/>
-    <slot></slot>
-
+    <div class="main-content ">
+        <div class="page-content dark:bg-zinc-700">
+            <div class="container-fluid px-[0.625rem]">
+                <slot></slot>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>

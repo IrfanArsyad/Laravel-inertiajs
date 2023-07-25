@@ -8,10 +8,17 @@ use Inertia\Inertia;
 
 class HomeController extends Controller
 {
-    public function index(Request $request)
+    public array $view_data = [];
+
+    public function __construct()
     {
 
-        return Inertia::render('Home/Views/content');
+        $this->view_data['module'] = 'home';
+    }
+
+    public function index(Request $request)
+    {
+        return Inertia::render('Home/Views/content', $this->view_data);
     }
 
 }
