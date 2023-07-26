@@ -1,9 +1,11 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 use \App\Modules\Auth\Controllers\AuthController;
 use \App\Modules\Home\Controllers\HomeController;
+use App\Modules\Examples\Controllers\TableController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,12 @@ use \App\Modules\Home\Controllers\HomeController;
 
 Route::prefix('/')->name('home')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('.index');
+});
+
+Route::prefix('example')->name('example')->group(function () {
+    Route::prefix('table')->name('table')->group(function () {
+        Route::get('/', [TableController::class, 'index'])->name('.index');
+    });
 });
 
 

@@ -7,6 +7,12 @@ import {createInertiaApp, Link} from '@inertiajs/vue3'
 import {ZiggyVue} from 'ziggy/vue'
 import {http} from '@/vue/libs'
 
+/*
+   import components
+ */
+import CTable from '@/vue/components/table/index.vue';
+import CBreadcumbs from '@/vue/components/breadcumbs/breadcumbs.vue';
+
 
 export const init = () => {
     createInertiaApp({
@@ -27,6 +33,10 @@ export const init = () => {
             }
 
             const app = createApp({render: () => h(App, props)})
+
+            // define components
+            app.component('c-table', CTable)
+            app.component('c-breadcumbs', CBreadcumbs)
 
             app.use(plugin)
             app.use(ZiggyVue, Ziggy)

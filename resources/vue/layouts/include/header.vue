@@ -14,8 +14,8 @@ export default {name: 'c-header'}
             <div class="topbar-brand flex items-center">
                 <div
                     class="navbar-brand flex items-center justify-between shrink px-5 h-[70px] border-r bg-slate-50 border-r-gray-50 dark:border-zinc-700 dark:bg-zinc-800">
-                    <a href="#" class="flex items-center font-bold text-lg  dark:text-white">
-                        <img src="images/logo-sm.svg" alt="" class="ltr:mr-2 rtl:ml-2 inline-block mt-1 h-6"/>
+                    <a href="#" class="flex items-center font-bold text-lg  dark:text-white sm:hidden">
+                        <img src="/images/logo-sm.svg" alt="" class="ltr:mr-2 rtl:ml-2 sm:pl-2 inline-block mt-1 h-6"/>
                         <span class="hidden xl:block align-middle">Minia</span>
                     </a>
                 </div>
@@ -73,25 +73,25 @@ export default {name: 'c-header'}
                             <li>
                                 <a href="#"
                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white"><img
-                                    src="images/flags/us.jpg" alt="user-image" class="mr-1 inline-block h-3">
+                                    src="/images/flags/us.jpg" alt="user-image" class="mr-1 inline-block h-3">
                                     <span class="align-middle">English</span></a>
                             </li>
                             <li>
                                 <a href="#"
                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white"><img
-                                    src="images/flags/spain.jpg" alt="user-image" class="mr-1 inline-block h-3">
+                                    src="/images/flags/spain.jpg" alt="user-image" class="mr-1 inline-block h-3">
                                     <span class="align-middle">Spanish</span></a>
                             </li>
                             <li>
                                 <a href="#"
                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white"><img
-                                    src="images/flags/germany.jpg" alt="user-image"
+                                    src="/images/flags/germany.jpg" alt="user-image"
                                     class="mr-1 inline-block h-3"> <span class="align-middle">German</span></a>
                             </li>
                             <li>
                                 <a href="#"
                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white"><img
-                                    src="images/flags/italy.jpg" alt="user-image" class="mr-1 inline-block h-3">
+                                    src="/images/flags/italy.jpg" alt="user-image" class="mr-1 inline-block h-3">
                                     <span class="align-middle">Italian</span></a>
                             </li>
                         </ul>
@@ -128,7 +128,7 @@ export default {name: 'c-header'}
                                         <a href="#!" class="text-reset notification-item">
                                             <div class="flex px-4 py-2 hover:bg-gray-50/50 dark:hover:bg-zinc-700/50">
                                                 <div class="flex-shrink-0 ltr:mr-3 rtl:ml-3">
-                                                    <img src="images/users/avatar-3.jpg"
+                                                    <img src="/images/users/avatar-3.jpg"
                                                          class="rounded-full h-8 w-8" alt="user-pic">
                                                 </div>
                                                 <div class="flex-grow">
@@ -186,7 +186,7 @@ export default {name: 'c-header'}
                                         <a href="#!" class="text-reset notification-item">
                                             <div class="flex px-4 py-2 hover:bg-gray-50/50 dark:hover:bg-zinc-700/50">
                                                 <div class="flex-shrink-0 ltr:mr-3 rtl:ml-3">
-                                                    <img src="images/users/avatar-6.jpg"
+                                                    <img src="/images/users/avatar-6.jpg"
                                                          class="rounded-full h-8 w-8" alt="user-pic">
                                                 </div>
                                                 <div class="flex-grow">
@@ -220,7 +220,7 @@ export default {name: 'c-header'}
                             @click="isProfileShow = !isProfileShow"
                             class="flex items-center px-4 py-5 border-x border-gray-50 bg-gray-50/30  dark:bg-zinc-700 dark:border-zinc-600 dark:text-gray-100">
                             <img class="h-8 w-8 rounded-full ltr:xl:mr-2 rtl:xl:ml-2"
-                                 src="images/users/avatar-1.jpg" alt="Header Avatar">
+                                 src="/images/users/avatar-1.jpg" alt="Header Avatar">
                             <span class="fw-medium  xl:block">Shawn L.</span>
                             <i class="mdi mdi-chevron-down align-bottom hidden xl:block"></i>
                         </button>
