@@ -13,7 +13,7 @@ export default {layout}
                         <div class="flex h-[90vh] flex-col">
                             <div class="mx-auto">
                                 <a href="index.html" class="">
-                                    <img src="images/logo-sm.svg" alt="" class="h-8 inline"> <span
+                                    <img src="" alt="" class="h-8 inline"> <span
                                     class="text-xl align-middle font-medium ltr:ml-2 rtl:mr-2 dark:text-white">Minia</span>
                                 </a>
                             </div>

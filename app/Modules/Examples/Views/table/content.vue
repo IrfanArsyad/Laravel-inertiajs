@@ -11,34 +11,30 @@ export default {layout}
 
 <script setup>
 
-import {reactive} from "vue";
+import {inject, reactive} from "vue";
 import {usePage} from '@inertiajs/vue3'
 
-const viewData = usePage().props
-console.log(viewData)
+const route = inject('route')
 
-const data = reactive({
+const viewData = usePage().props
+const collumn = [];
+
+const response = await fetch('/example/table/table');
+const Ziggy = await response.json();
+
+console.log(Ziggy)
+/*
+ * Table Config
+ */
+const tableConfig = reactive({
     display: true,
     tableKey: 0,
     tableConfig: {
-        name: 'agent',
-        routeName: 'agent',
+        name: 'User Lists',
+        routeName: 'example',
         config: {
             action: true,
-            actionComponent: [
-                {
-                    name: 'edit',
-                    active: true,
-                    url: "agent.edit",
-                    columns: "id_system_user"
-                },
-                // {
-                //     name: 'delete',
-                //     active: true,
-                //     url: "agent.delete",
-                //     columns: "id_system_user"
-                // }
-            ],
+            actionComponent: [],
             sortable: true,
             downloadable: false,
             paginator: true,
@@ -48,8 +44,8 @@ const data = reactive({
             createdField: false,
         },
         api: {
-            table: route('agent.table'),
-            download: route('agent.table')
+            table: route('example.table.table'),
+            download: route('example.table.table')
         },
         filter: [
             {
@@ -63,66 +59,5 @@ const data = reactive({
         columns: collumn
     }
 })
-const tableConfig = {
 
-    // setting
-    settings: {
-        showEntries: true,
-        pagination: true,
-    },
-
-    // headers
-    headers: [
-        {
-            // colspan:
-            title: "Test",
-        },
-        {
-            // colspan:
-            title: "Nama",
-        },
-        {
-            // colspan:
-            title: "Item",
-        },
-        {
-            // colspan:
-            title: "Barang",
-        },
-        {
-            // colspan:
-            title: "Action",
-        }
-    ],
-
-    //columns
-    columns:
-        [
-            {
-                row: 2,
-                value: "Name",
-                type: 'phone',
-            },
-            {
-                row: 2,
-                value: "Name",
-                type: 'number',
-            },
-            {
-                row: 2,
-                value: "Name",
-                type: 'number',
-            },
-            {
-                row: 2,
-                value: "Name",
-                type: 'number',
-            },
-            {
-                row: 2,
-                value: "Name",
-                type: 'number',
-            }
-        ]
-}
 </script>

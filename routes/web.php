@@ -24,8 +24,9 @@ Route::prefix('/')->name('home')->group(function () {
 });
 
 Route::prefix('example')->name('example')->group(function () {
-    Route::prefix('table')->name('table')->group(function () {
+    Route::prefix('table')->name('.table')->group(function () {
         Route::get('/', [TableController::class, 'index'])->name('.index');
+        Route::get('/table', [TableController::class, 'table'])->name('.table');
     });
 });
 

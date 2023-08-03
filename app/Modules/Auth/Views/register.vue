@@ -14,7 +14,7 @@ export default {layout}
                         <div class="flex h-[90vh] flex-col">
                             <div class="mx-auto">
                                 <a href="index.html" class="">
-                                    <img src="images/logo-sm.svg" alt="" class="h-8 inline"> <span
+                                    <img src="" alt="" class="h-8 inline"> <span
                                     class="text-xl align-middle font-medium ltr:ml-2 rtl:mr-2 dark:text-white">Minia</span>
                                 </a>
                             </div>
@@ -139,7 +139,7 @@ export default {layout}
                                                 ultricies enim at malesuada nibh diam on tortor neaded to throw curve
                                                 balls.”</h3>
                                             <div class="flex mt-6 mb-10 pt-4">
-                                                <img src="images/users/avatar-1.jpg"
+                                                <img src=""
                                                      class="h-12 w-12 rounded-full" alt="...">
                                                 <div class="flex-1 ltr:ml-3 rtl:mr-3 mb-4">
                                                     <h5 class="font-size-18 text-white">Ilse R. Eaton</h5>
@@ -155,7 +155,7 @@ export default {layout}
                                                 ultricies enim at malesuada nibh diam on tortor neaded to throw curve
                                                 balls.”</h3>
                                             <div class="flex mt-6 mb-10 pt-4">
-                                                <img src="images/users/avatar-2.jpg"
+                                                <img src=""
                                                      class="h-12 w-12 rounded-full" alt="...">
                                                 <div class="flex-1 ltr:ml-3 rtl:mr-3 mb-4">
                                                     <h5 class="font-size-18 text-white">Mariya Willam</h5>
@@ -171,7 +171,7 @@ export default {layout}
                                                 ultricies enim at malesuada nibh diam on tortor neaded to throw curve
                                                 balls.”</h3>
                                             <div class="flex mt-6 mb-10 pt-4">
-                                                <img src="images/users/avatar-3.jpg"
+                                                <img src=""
                                                      class="h-12 w-12 rounded-full" alt="...">
                                                 <div class="flex-1 ltr:ml-3 rtl:mr-3 mb-4">
                                                     <h5 class="font-size-18 text-white">Jiya Jons</h5>
@@ -183,7 +183,6 @@ export default {layout}
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

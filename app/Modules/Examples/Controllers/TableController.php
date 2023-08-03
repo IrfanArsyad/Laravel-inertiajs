@@ -19,8 +19,34 @@ class TableController extends Controller
 
     public function table(Request $request)
     {
-        $users = new UserTableRepository();
-        return $users->get_users($request);
+        $data = [
+            [
+                'nama' => 'irfan',
+                'email' => 'irfan@gmail.com',
+                'alamat' => 'tangerang',
+                'phone' => '0832131'
+            ],
+            [
+                'nama' => 'irfan1',
+                'email' => 'irfan1@gmail.com',
+                'alamat' => 'tangerang',
+                'phone' => '0832131'
+            ],
+            [
+                'nama' => 'irfan2',
+                'email' => 'irfan2@gmail.com',
+                'alamat' => 'tangerang',
+                'phone' => '0832131'
+            ],
+            [
+                'nama' => 'irfan3',
+                'email' => 'irfan3@gmail.com',
+                'alamat' => 'tangerang',
+                'phone' => '0832131'
+            ]
+        ];
+
+        return response_api(collect($data), 200);
     }
 
 }
